@@ -21,7 +21,7 @@ def odd_magical_square(n):
             i = n-1
         elif j==n:
             j = 0
-    print(mag_sq)
+    return (mag_sq)
 
 def doubly_even_number(n):
     mag_sq = np.arange(1,n*n+1).reshape(n,n)
@@ -30,3 +30,17 @@ def doubly_even_number(n):
             if (i%4 == j%4) or ((i%4)+(j%4)==3):
                 mag_sq[i][j] = n * n + 1 - mag_sq[i][j]
     print(mag_sq)
+
+def singly_even_number(n):
+    half_n = n//2
+    sub_sq = odd_magical_square(half_n)
+    mag_sq = np.block([
+        [sub_sq, sub_sq + 2 * (half_n**2)],
+        [sub_sq + 3* (half_n**2), sub_sq + (half_n**2)],
+    ])
+
+    k = (n-2)//4
+    col_to_swap = list(range(k))+list(range(n-k , n))
+    mag_sq[:,col_to_swap] = np.roll(mag_sq[:,col_to_swap],shift=half_n,axis=0)
+    print(mag_sq)
+singly_even_number(6)
