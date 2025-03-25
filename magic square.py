@@ -21,6 +21,7 @@ def odd_magical_square(n):
             i = n-1
         elif j==n:
             j = 0
+    print(mag_sq)
     return (mag_sq)
 
 def doubly_even_number(n):
@@ -44,4 +45,10 @@ def singly_even_number(n):
     mag_sq[:,col_to_swap] = np.roll(mag_sq[:,col_to_swap],shift=half_n,axis=0)
     print(mag_sq)
 
-
+n = int(input("Enter a number: "))
+if n % 2 == 1:
+    odd_magical_square(n)
+elif n % 4 == 0:
+    doubly_even_number(n)
+else:
+    singly_even_number(n)
