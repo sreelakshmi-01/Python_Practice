@@ -23,4 +23,10 @@ def odd_magical_square(n):
             j = 0
     print(mag_sq)
 
-odd_magical_square(3)
+def doubly_even_number(n):
+    mag_sq = np.arange(1,n*n+1).reshape(n,n)
+    for i in range(n):
+        for j in range(n):
+            if (i%4 == j%4) or ((i%4)+(j%4)==3):
+                mag_sq[i][j] = n * n + 1 - mag_sq[i][j]
+    print(mag_sq)
