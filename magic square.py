@@ -43,4 +43,5 @@ def singly_even_number(n):
     col_to_swap = list(range(k))+list(range(n-k , n))
     mag_sq[:,col_to_swap] = np.roll(mag_sq[:,col_to_swap],shift=half_n,axis=0)
     print(mag_sq)
-singly_even_number(6)
+
+
