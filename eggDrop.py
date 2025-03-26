@@ -31,4 +31,6 @@ def eggDrop(n,k):
 
     return table[n][k]
 
-print(eggDrop(2,10))
+n = int(input("Enter the number of Eggs: "))
+k = int(input("Enter the number of floors: "))
+print("The minimum number of moves: ",eggDrop(n,k))
