@@ -10,6 +10,5 @@ e) If the eggs break at a certain floor, it will break at any floor above.
 f) Return the minimum number of moves to determine with certainty what the value of f is.
 '''
 
-def EggDrop(n,k):
-    count = 0
-    return count
+def eggDrop(n,k):
+    table = [[0 for _ in range(k+1)] for _ in range (n+1)]
