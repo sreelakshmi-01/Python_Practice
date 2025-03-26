@@ -12,3 +12,11 @@ f) Return the minimum number of moves to determine with certainty what the value
 
 def eggDrop(n,k):
     table = [[0 for _ in range(k+1)] for _ in range (n+1)]
+
+    #Base cases
+    for j in range (n+1):
+        table[1][j] = j
+
+    for i in range (k+1):
+        table[i][0] = 0
+        table[i][1] = 1
