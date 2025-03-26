@@ -20,3 +20,15 @@ def eggDrop(n,k):
     for i in range (n+1):
         table[i][0] = 0
         table[i][1] = 1
+
+    #Higher cases
+    for i in range (2,n+1):
+        for j in range (2,k+1):
+            table[i][j] = float("inf")
+            for x in range (1,j+1):
+                w_c = 1 + max(table[i-1][x-1], table[i][j-x])
+                table[i][j] = min(table[i][j], w_c)
+
+    return table[n][k]
+
+print(eggDrop(2,10))
