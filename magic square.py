@@ -7,7 +7,6 @@ import numpy as np
 
 def odd_magical_square(n):
     mag_sq = np.zeros((n,n), dtype = int)
-
     i,j = 0,n//2
 
     for num in range (1, n*n+1):
