@@ -28,7 +28,6 @@ def eggDrop(n,k):
             for x in range (1,j+1):
                 w_c = 1 + max(table[i-1][x-1], table[i][j-x])
                 table[i][j] = min(table[i][j], w_c)
-
     return table[n][k]
 
 n = int(input("Enter the number of Eggs: "))
