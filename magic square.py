@@ -17,8 +17,10 @@ def odd_magical_square(n):
         if num % n == 0:
             i = i+2
             j = j-1
+
         elif i<0:
             i = n-1
+
         elif j==n:
             j = 0
     return (mag_sq)
