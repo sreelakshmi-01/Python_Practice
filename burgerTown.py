@@ -1,7 +1,6 @@
 def max_happiness(N, restaurants):
     # Sort restaurants based on their position (X)
     restaurants.sort()
-
     # Dictionary to store max happiness at each position
     dp = {}
 
