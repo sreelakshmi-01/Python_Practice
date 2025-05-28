@@ -11,6 +11,7 @@ def max_happiness(N, restaurants):
     for i in range(N):
         x, a, b = restaurants[i]
 
+        
         # Initialize max happiness at this position as the burger happiness
         dp[x] = a
 
