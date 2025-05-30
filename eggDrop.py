@@ -2,6 +2,7 @@
 exists a floor f where 0 <= f <= K such that any egg dropped from a floor higher than f will
 break, and any egg dropped from or below floor f will not break.
 There are few rules which are given below.
+
 a) An egg that survives a fall can be used again.
 b) A broken egg must be discarded.
 c) The effect of a fall is the same for all eggs.
