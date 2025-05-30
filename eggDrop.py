@@ -16,6 +16,7 @@ def eggDrop(n,k):
     #Base cases
     for j in range (k+1):
         table[1][j] = j
+        
 
     for i in range (n+1):
         table[i][0] = 0
