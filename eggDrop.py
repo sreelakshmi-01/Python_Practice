@@ -17,7 +17,6 @@ def eggDrop(n,k):
     for j in range (k+1):
         table[1][j] = j
         
-
     for i in range (n+1):
         table[i][0] = 0
         table[i][1] = 1
