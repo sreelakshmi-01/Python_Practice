@@ -32,4 +32,5 @@ def eggDrop(n,k):
 
 n = int(input("Enter the number of Eggs: "))
 k = int(input("Enter the number of floors: "))
+
 print("The minimum number of moves: ",eggDrop(n,k))
