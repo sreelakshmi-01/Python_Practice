@@ -1,6 +1,7 @@
 '''You are given N identical eggs, and you have access to a K-floored building from 1 to K. There
 exists a floor f where 0 <= f <= K such that any egg dropped from a floor higher than f will
 break, and any egg dropped from or below floor f will not break.
+
 There are few rules which are given below.
 
 a) An egg that survives a fall can be used again.
